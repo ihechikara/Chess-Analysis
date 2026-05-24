@@ -1,4 +1,4 @@
-# Chess Analysis
+# Chess Analysis App
 
 A browser-based chess game analysis tool powered by Stockfish 18 WASM. Runs entirely in the browser — no server-side processing.
 
