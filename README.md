@@ -14,9 +14,7 @@ A browser-based chess game analysis tool powered by Stockfish 18 WASM. Runs enti
 
 ## Getting Started
 
-> **Important:** The Stockfish engine files are not included in the repository due to their size (~108 MB). They are downloaded automatically during `npm install` via the `postinstall` script.
-
-### 1. Install dependencies (this also copies the Stockfish engine files into `src/`)
+### 1. Install dependencies
 
 ```bash
 npm install
@@ -32,12 +30,10 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## How It Works
 
-The Stockfish WASM engine runs in a Web Worker inside the browser. After `npm install`, the engine files are copied from the `stockfish` npm package into `src/`:
+The Stockfish 18 Lite WASM engine runs in a Web Worker inside the browser. The engine files are included in the repository:
 
-- `src/stockfish-18-single.js`
-- `src/stockfish-18-single.wasm`
-
-These files are listed in `.gitignore` and will not be committed to the repository. If they are missing, re-run `npm install`.
+- `src/stockfish-18-lite-single.js`
+- `src/stockfish-18-lite-single.wasm`
 
 ## Usage
 

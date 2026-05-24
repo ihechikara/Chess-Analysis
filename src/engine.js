@@ -12,7 +12,7 @@ class StockfishEngine {
   start() {
     return new Promise((resolve, reject) => {
       try {
-        const workerUrl = new URL('./stockfish-18-single.js', import.meta.url);
+        const workerUrl = new URL('./stockfish-18-lite-single.js', import.meta.url);
         this.worker = new Worker(workerUrl);
       } catch (e) {
         return reject(new Error(`Failed to create Stockfish worker: ${e.message}`));
