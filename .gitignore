@@ -1,0 +1,4 @@
+.claude/
+node_modules/
+src/stockfish-18-single.js
+src/stockfish-18-single.wasm

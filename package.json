@@ -1,0 +1,12 @@
+{
+  "name": "chess-analysis",
+  "version": "1.0.0",
+  "description": "Browser-based chess game analysis powered by Stockfish WASM",
+  "scripts": {
+    "start": "npx serve . --listen 3000",
+    "postinstall": "node scripts/copy-engine.js"
+  },
+  "dependencies": {
+    "stockfish": "^18.0.7"
+  }
+}
